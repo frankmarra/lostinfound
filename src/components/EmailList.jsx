@@ -49,49 +49,50 @@ export default function EmailList() {
   }
 
   return (
-    <div className="form-wrapper">
-      <h3>Join our mailing list</h3>
-      <p>
-        Never miss when a new playlist is released. If you have any music
-        recommendations you'd like to share, I would be more than happy to
-        listen to them!
-      </p>
-      {status.success ? (
-        <div className="success">
-          You have joined the email list. You should recieve and email shortly.
-          Thank you!
+    <div className="email-list">
+      <div className="form-wrapper">
+        <div className="mailing-copy">
+          <h3>Join our mailing list</h3>
+          <p>Never miss when a new playlist is released.</p>
         </div>
-      ) : (
-        <form className="email-signup" onSubmit={handleSubmit}>
-          <label htmlFor="name">Name:</label>
-          <br />
-          <input
-            type="text"
-            name="name"
-            value={formValues.name}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <label htmlFor="email">Email:</label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            value={formValues.email}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <button
-            type="submit"
-            className="btn primary"
-            disabled={!formValues.name || !formValues.email}
-          >
-            Join List
-          </button>
-        </form>
-      )}
+        {status.success ? (
+          <div className="success">
+            You have joined the email list. You should recieve and email
+            shortly. Thank you!
+          </div>
+        ) : (
+          <form className="email-signup" onSubmit={handleSubmit}>
+            <label htmlFor="name">Name:</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              value={formValues.name}
+              onChange={handleChange}
+              required
+            />
+            <br />
+            <label htmlFor="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              value={formValues.email}
+              onChange={handleChange}
+              required
+            />
+            <br />
+            <button
+              type="submit"
+              className="btn primary"
+              disabled={!formValues.name || !formValues.email}
+            >
+              Join List
+            </button>
+          </form>
+        )}
+      </div>
+
       {status.error ? <div className="error">{status.error}</div> : null}
     </div>
   )

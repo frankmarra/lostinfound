@@ -2,19 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import SpotifyPlaylist from '../components/SpotifyPlaylist.astro';
 import EmailList from '../components/EmailList.jsx';
+
+
 ---
 
 <Layout title="Lost In Found">
 	<main>
 		<div class="page-wrapper">
 			<div class="spotify-list">
+				<h2>January playlist</h2>
 				<SpotifyPlaylist />
+				<a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Play on Spotify</a><span>|</span>
 				<a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Follow on Spotify</a>
 			</div>
 			<div class="about">
 				<h2>What is Lost In Found?</h2>
 				<p>Lost In Found aims to be a road map of the rabbit holes I constantly find myself meandering down while listening to music. Lately, I feel like I have been finding and rediscovering so much amazing music that I decided to start trying to do a monthly playlist to document the journey.</p>
-				<p>I know that not everyone uses Spotify, and in future updates, I would like to make it easier for the playlist to be streamed on any service.</p>
+				
 			</div>
 			<EmailList client:visible/>
 		</div>
@@ -25,6 +29,7 @@ import EmailList from '../components/EmailList.jsx';
 	main {
 		margin: 3vh 0;
 		overflow-y: scroll;
+		scroll-snap-align: 50%;
 	}
 	a {
 		text-decoration: none;
@@ -37,6 +42,9 @@ import EmailList from '../components/EmailList.jsx';
 		justify-content: center;
 	}
 
+	.page-wrapper {
+	
+	}
 	.spotify-list {
 		width: 40%;
 	}
