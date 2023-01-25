@@ -1,3 +1,8 @@
+@font-face {
+  font-family: coolvetica;
+  src: url('/fonts/coolvetica rg.otf');
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -52,7 +57,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .email-list {
   width: 100%;
-  background-color: #259dd1;
+  background-color: #A335AB;
   display: flex;
   flex-direction: column;
   align-items: center;
