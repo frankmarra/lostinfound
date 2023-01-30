@@ -50,10 +50,14 @@ export default function EmailList() {
 
   return (
     <div className="email-list">
-      <div className="form-wrapper">
+      <div className="email-list-wrapper">
         <div className="mailing-copy">
-          <h3>Join our mailing list</h3>
-          <p>Never miss when a new playlist is released.</p>
+          <h3>Join the mailing list</h3>
+          <p>
+            Never miss when a new playlist is released, and always have
+            something new to listen to. Maybe you will find a rabbit hole of
+            your own to dive down.
+          </p>
         </div>
         {status.success ? (
           <div className="success">
@@ -61,27 +65,28 @@ export default function EmailList() {
             shortly. Thank you!
           </div>
         ) : (
-          <form className="email-signup" onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
-            <br />
-            <input
-              type="text"
-              name="name"
-              value={formValues.name}
-              onChange={handleChange}
-              required
-            />
-            <br />
-            <label htmlFor="email">Email:</label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              value={formValues.email}
-              onChange={handleChange}
-              required
-            />
-            <br />
+          <div className="form-wrapper">
+            <form className="email-signup" onSubmit={handleSubmit}>
+              <label htmlFor="name">Name</label>
+
+              <input
+                type="text"
+                name="name"
+                value={formValues.name}
+                onChange={handleChange}
+                required
+              />
+
+              <label htmlFor="email">Email</label>
+
+              <input
+                type="email"
+                name="email"
+                value={formValues.email}
+                onChange={handleChange}
+                required
+              />
+            </form>
             <button
               type="submit"
               className="btn primary"
@@ -89,7 +94,7 @@ export default function EmailList() {
             >
               Join List
             </button>
-          </form>
+          </div>
         )}
       </div>
 

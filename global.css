@@ -67,17 +67,48 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.form-wrapper * > * {
-  margin: 1vh;
+
+.email-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-block: 2vh;
+  background-color: rgb(0,0,0);
+  color:#e771f0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px rgba(0,0,0,.5);
+  width: 70%;
+  
 }
 
+.mailing-copy {
+  width: 50%;
+  padding-inline: 20px;
+}
 .form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 2vh;
-  background-color: #fdf4dd;
+  padding: 20px;
+}
+.email-signup * + * {
+  margin-top: 1vh;
+}
+.email-signup {
+  display: flex;
+  flex-flow: column;
+  /* align-items: center; */
+  padding: 20px;
+}
+
+
+.btn {
+  padding-inline: 15px;
   border-radius: 10px;
-  box-shadow: 5px 5px 3px rgba(0,0,0,.5);
   
+}
+
+.primary {
+  border: 2px solid #e771f0;
 }

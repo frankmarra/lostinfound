@@ -10,7 +10,7 @@ import EmailList from '../components/EmailList.jsx';
 	<main>
 		<div class="page-wrapper">
 			<div class="spotify-list">
-				<h2>January playlist</h2>
+				<h2>Current playlist</h2>
 				<SpotifyPlaylist />
 				<a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Play on Spotify</a><span>|</span>
 				<a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Follow on Spotify</a>
@@ -19,7 +19,9 @@ import EmailList from '../components/EmailList.jsx';
 
 				<h2>What is Lost In Found?</h2>
 				<div class="about">
-					<p>Lost In Found aims to be a road map of the rabbit holes I constantly find myself meandering down while listening to music. Lately, I feel like I have been finding and rediscovering so much amazing music that I decided to start trying to do a monthly playlist to document the journey.</p>
+					<p>Lost In Found aims to be a road map of the many rabbit holes I find myself meandering down while listening to music. I listen to a lot of music, and I listen to a lot of kinds of music.  Lately, I feel like I have been finding and rediscovering so many amazing artists and songs that I decided to start trying to do a monthly playlist to document the journey.</p>
+					<br>
+					<p>I am sure over the years there have been countless tracks that you once loved and have maybe forgotten about. It happens. There is a ton of music being released daily and its hard to keep track of it all.</p>
 				</div>
 				
 				
@@ -46,8 +48,11 @@ import EmailList from '../components/EmailList.jsx';
 	.spotify-list {
 		width: 100%;
 		background-color: #dd7487;
+		font-family: 'ethereal';
 	}
-
+	.spotify-list h2 {
+		font-size: 3rem;
+	}
 	.about-wrapper {
 		text-align: center;
 		padding-block: 5vh;
