@@ -52,17 +52,16 @@ export default function EmailList() {
     <div className="email-list">
       <div className="email-list-wrapper">
         <div className="mailing-copy">
-          <h3>Join the mailing list</h3>
+          <h3>JOIN THE MAILING LIST</h3>
           <p>
             Never miss when a new playlist is released, and always have
-            something new to listen to. Maybe you will find a rabbit hole of
-            your own to dive down.
+            something new to listen to.
+            <p>Maybe you will find a rabbit hole of your own to dive down.</p>
           </p>
         </div>
         {status.success ? (
           <div className="success">
-            You have joined the email list. You should recieve and email
-            shortly. Thank you!
+            You have joined the email list. Thank you!
           </div>
         ) : (
           <div className="form-wrapper">
