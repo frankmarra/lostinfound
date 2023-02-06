@@ -136,6 +136,13 @@ p, h1, h2, h3, h4, h5, h6 {
   
 }
 
+.primary:disabled {
+  background-color: #af5eb5;
+  border: 2px solid #af5eb5;
+}
+
 .primary {
   border: 2px solid #e771f0;
+  background-color: #e771f0;
+
 }

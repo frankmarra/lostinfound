@@ -21,17 +21,15 @@ import EmailList from '../components/EmailList.jsx';
 					
 					<div class="about">
 						<h2 class="heading">WHAT IS LOST IN FOUND?</h2>
-						<p>Lost in Found is a modern mixtape.  It is a map of my musical meanderings.  With so many tracks available at our fingertips because of streaming services, it can sometimes feel overwhelming with what to listen to. A lot of the time you will probably just throw on some algorithmic playlist or maybe one of your own with your “Oldies but Goldies”.</p>
-						
-						<p>These songs aren’t all necessarily new, or from up and coming artists.  They are just songs I have discovered, or rediscovered, during the month and have been listening to on repeat.  I want to share these with you. I have unfortunately forgotten more music than I remember, and with technology at the state it is in, that shouldn’t happen anymore. So while this aims to be a mixtape to maybe pique your interest in a new artist or genre, it’s a musical journal for me.  So I can look back and remember what I was listening to.</p>
+						<p>Lost in Found is a modern mixtape.  It's a map of my musical meanderings. These songs aren’t all necessarily new, or from up and coming artists.  They are just songs I have discovered, or rediscovered, during the month and have been listening to on repeat. I want to share these with you, because more music is better than less music. A lot of the time we find ourselves stuck listening to the same songs, albums, artists, genres, etc. over and over. So let this be a mixtape to pique your interest into something new.</p>
 					</div>
 					
 					
 				
 				<EmailList client:visible/>
 			</div>
+			<div class="right-gutter"></div>
 		</div>
-		<div class="right-gutter"></div>
 		</main>
 	</Layout>
 	
@@ -46,14 +44,14 @@ import EmailList from '../components/EmailList.jsx';
 		display: grid;
 		grid-template-columns: 2fr 5fr 2fr;
 		/* background: -webkit-linear-gradient(#dd7487, #A335AB); */
-		background: #151718
+		background: #d3dbdf
 	}
 	.content * + * {
 		margin-block: 1vh;
 	}
 
 	.content {
-		color: #e771f0;
+		color: black;
 		
 	}
 	.content, .spotify-list, .about-wrapper {
@@ -66,13 +64,24 @@ import EmailList from '../components/EmailList.jsx';
 	
 	.spotify-list {
 		width: 100%;
+		margin-block: 1vh;
 	}
 
-
-	
 	.about p {
 		font-size: 1.5rem;
-		line-height: 1.25;
+		/* line-height: 1.25; */
+		margin-top: 4vh;
 		padding-inline: 10px;
+	}
+
+	@media screen and (max-width: 480px) {
+		.page-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.about p {
+			font-size: 1rem;
+		}
 	}
 </style>
