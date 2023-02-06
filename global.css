@@ -51,20 +51,22 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-
+.top-heading {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .heading {
 		margin-block: 1vh;
 		padding-block: 1vh;
     width: 100%;
     font-size: 2.5rem;
-		
 		background-color: black;
 		color:#e771f0;
 		letter-spacing: 1rem;
 		font-weight: 400;
 		font-family: 'typewriter';
 		text-align: center;
-	
+    box-shadow: 5px 5px 3px rgba(0,0,0,.5);
 }
 .email-list {
   width: 100%;
@@ -87,7 +89,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-block: 2vh;
   background-color: rgb(0,0,0);
   color:#e771f0;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 5px 5px 3px rgba(0,0,0,.5);
   width: 100%;
   
