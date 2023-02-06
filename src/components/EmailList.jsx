@@ -66,25 +66,27 @@ export default function EmailList() {
         ) : (
           <div className="form-wrapper">
             <form className="email-signup" onSubmit={handleSubmit}>
-              <label htmlFor="name">Name</label>
+              <div className="input-wrapper">
+                <label htmlFor="name">Name</label>
 
-              <input
-                type="text"
-                name="name"
-                value={formValues.name}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="email">Email</label>
-
-              <input
-                type="email"
-                name="email"
-                value={formValues.email}
-                onChange={handleChange}
-                required
-              />
+                <input
+                  type="text"
+                  name="name"
+                  value={formValues.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="input-wrapper">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </form>
             <button
               type="submit"

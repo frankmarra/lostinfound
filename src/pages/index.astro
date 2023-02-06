@@ -12,7 +12,7 @@ import EmailList from '../components/EmailList.jsx';
 			<div class="left-gutter"></div>
 			<div class="content">
 				<div class="spotify-list">
-					<h2 class="heading">CURRENT PLAYLIST</h2>
+					<h2 class="top-heading heading">CURRENT PLAYLIST</h2>
 					<SpotifyPlaylist />
 					<!-- <a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Play on Spotify</a><span>|</span> -->
 					<a href="https://open.spotify.com/playlist/6ECGSxydjs5TWmWLI11UmQ?go=1&sp_cid=e98ed6b71b65251a637292bc3be8dd15&utm_source=embed_player_v&utm_medium=desktop">Follow on Spotify</a>
@@ -45,10 +45,15 @@ import EmailList from '../components/EmailList.jsx';
 	.page-wrapper {
 		display: grid;
 		grid-template-columns: 2fr 5fr 2fr;
-		background: -webkit-linear-gradient(#dd7487, #A335AB);
+		/* background: -webkit-linear-gradient(#dd7487, #A335AB); */
+		background: #151718
 	}
 	.content * + * {
 		margin-block: 1vh;
+	}
+
+	.content {
+		color: #e771f0;
 	}
 	.content, .spotify-list, .about-wrapper {
 		display: flex;
